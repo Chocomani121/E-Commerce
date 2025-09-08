@@ -1,2 +1,3 @@
 # E-Commerce
-Practicing E-Commerce static 
+Practicing My own E-Commerce static 
+all credits GreatStack:
