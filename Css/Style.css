@@ -1,0 +1,235 @@
+* {
+    /*-GLOBAL STYLES-*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.html   {
+    scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+.col-2 {
+    /*-COL-2 STYLES-*/
+    flex-basis: 50%;
+}
+
+.col-2 img {
+    /*-COL-2 IMAGE-*/
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    /*-COL-2 TITLE-*/
+    font-size: 50px;
+    line-height: 60px;
+    margin: 20px 0;
+}
+
+.btn {
+    /*-BUTTON STYLES-*/
+    display: inline-block;
+    background-color: #e6c42e;
+    color: #fff;
+    margin: 10px 0;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    /*-BUTTON HOVER EFFECT-*/
+    background-color: #fc0505;
+}
+
+.header {
+    /*-HEADER STYLES-*/
+    background-color: #e6c42e;
+    background: radial-gradient(circle at top left, #eccc3c 0%, #f15d5d 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 220px;
+    /* make full-bleed across viewport */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+.header .row {
+    /*-HEADER ROW STYLES-*/
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.categories {
+    /*-CATEGORIES STYLES-*/
+    margin: 20px 0;
+
+}
+
+.col-3 {
+    /*-COL-3 STYLES-*/
+    flex-basis: 33.33%;
+    padding: 15px;
+}
+
+.col-3 img {
+    /*-COL-3 IMAGE-*/
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.small-container {
+    /*-SMALL CONTAINER STYLES-*/
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    /*-COL-4 STYLES-*/
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col-4 img {
+    /*-COL-4 IMAGE-*/
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.col-4:hover {
+    /*-COL-4 HOVER EFFECT-*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.title {
+    /*-TITLE STYLES-*/
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+    position: relative;
+    line-height: 30px;
+    color: #555;
+}
+
+.title::after {
+    /*-TITLE UNDERLINE-*/
+    content: '';
+    background-color: #e6c42e;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rating {
+    justify-content: center;
+    display: flex;
+    margin: 1px 0;
+}
+
+.rating i {
+    color: #e6c42e;
+    margin: 0 2px;
+}
+.col-3 .rating {
+    justify-content: center;
+    display: flex;
+    margin: 10px 0;
+}
+.col-3 {
+    text-align: center;
+    padding: 40px 20px;
+}
+.col-3 img {
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.col-3:hover {
+    box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 1s ease;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+}
+    .col-2 {
+        text-align: center;
+    }
+    .col-5 {
+        text-align: center;
+    }
+}
+/* Responsive rules for tablet / mobile */
+@media (max-width: 900px) {
+  .small-container { padding-left: 16px; padding-right: 16px; }
+  .row { flex-direction: column; gap: 18px; align-items: stretch; }
+  .col-2, .col-3, .col-4, .col-5 { flex-basis: 100%; width: 100%; }
+  .col-2 img { padding: 20px 0; }
+  .header { min-height: 160px; }
+  .header .row { padding-top: 30px; padding-bottom: 30px; }
+  .title { font-size: 20px; }
+  .title::after { width: 70px; height: 4px; }
+  .btn { padding: 8px 14px; font-size: 14px; }
+  .rating i { font-size: 14px; margin: 0 4px; }
+  .col-3 { padding: 20px; text-align: center; }
+  .col-4:hover { transform: none; box-shadow: none; transition: none; }
+  img { height: auto; max-width: 100%; display: block; }
+}
+
+/* Small phone tweaks */
+@media (max-width: 480px) {
+  .header .row { padding-top: 18px; padding-bottom: 18px; }
+  .col-2 h1 { font-size: 28px; line-height: 34px; }
+  .title { font-size: 18px; }
+  .title::after { width: 60px; }
+  .btn { padding: 8px 12px; font-size: 13px; }
+  .rating i { font-size: 13px; }
+}
+
+/* Center content in .col-5 (horizontal + vertical) */
+.col-5 {
+  flex-basis: 20%; /* fallback for larger screens */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-5 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+/* Optional: ensure container padding so full-bleed sections don't touch edges */
+.small-container { box-sizing: border-box; }

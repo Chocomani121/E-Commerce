@@ -1,0 +1,95 @@
+.footer {
+    background-color: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 10px 20px 0px;
+
+    /* Full-Width Background */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+footer .container {
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.footer p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-col-1 {
+    list-style: none;
+    padding: 0;
+}
+
+/* Footer Links */
+.footer ul,
+.footer .footer-col-1,
+.footer .footer-col-1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.app-logo img {
+    margin: 0px 5px;
+    width: 140px;
+    height: 40px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+
+    /* layout for bottom row: left and right corners */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+
+}
+
+.copyright {
+    padding-left: 90px;
+    margin: 5px 0;
+    text-align: right;
+    flex: 0 0 auto;
+    /* keep size based on content */
+}
+
+.hr {
+    padding: 10px 0;
+    border: none;
+    margin: 0px 0;
+}
